@@ -6,7 +6,7 @@ from datetime import datetime
 
 # Page configuration
 st.set_page_config(
-    page_title="Análisis de Sensores - Mi Ciudad",
+    page_title="Sensor LUZ",
     page_icon="📊",
     layout="wide"
 )
@@ -70,7 +70,7 @@ if uploaded_file is not None:
         tab1, tab2, tab3, tab4 = st.tabs(["📈 Visualización", "📊 Estadísticas", "🔍 Filtros", "🗺️ Información del Sitio"])
 
         with tab1:
-            st.subheader('Visualización de Datos')
+            st.subheader('Visualización de Datos del sensor Luz')
             
             # Chart type selector
             chart_type = st.selectbox(
